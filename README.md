@@ -18,7 +18,7 @@
 
 ## link To Deployed Application:
 
-Link to Github Repo:
+Link to Github Repo: https://github.com/Whowlett13/HateBook
 Link to Heroku:
 
 ## ScreenShot of Deployed Application:
