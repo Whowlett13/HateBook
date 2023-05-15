@@ -1,0 +1,15 @@
+<h2>Your Posts</h2>
+
+<button type="submit" class="btn new-post-button"><a class="link" href="/dashboard/"> New Post</a></button>
+<section>
+    {{#if posts.length}}
+
+
+    {{#each posts as |post|}}
+    {{> newsfeed post}}
+    {{/each}}
+
+
+    {{/if}}
+</section>
+<script src="/HateBook/public/js/addPost.js"></script>

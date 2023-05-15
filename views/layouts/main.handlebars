@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HateBook</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/jass.css">
+</head>
+
+<body>
+  <div class="container wrapper">
+    <header class="row">
+      <h1 class="logo" href="/">HateBook</h1>
+      <nav>
+        <ul class="navbar">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/newsFeed">Newsfeed</li>
+            {{#if loggedIn}}
+            <a class="link" href="/" id="logout">Logout</a>
+            {{else}}
+            <a class="link" href="/login">Login</a>
+            {{/if}}
+        </ul>
+      </nav>
+
+
+    </header>
+
+    <main>
+      {{{ body }}}
+    </main>
+
+  </div>
+</body>
+
+</html>
