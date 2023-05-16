@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  background-color: #3a3b3c;
+  background-color: whitesmoke;
 }
 h1 {
   display: flex;
@@ -33,7 +33,9 @@ a {
 a:visited {
   color: inherit;
 }
+single-post-container{
 
+}
 header {
   display: flex;
   justify-content: space-evenly;
@@ -105,24 +107,6 @@ aside {
   color: var(--light);
 }
 
-/* nav {
-  display: flex;
-  background-color: var(--secondary);
-}
-
-nav a {
-  display: flex;
-  justify-content: space space-evenly;
-  color: #4267b2;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
-} */
 
 .btn-no-style {
   background: none;
