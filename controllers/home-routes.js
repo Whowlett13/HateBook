@@ -69,14 +69,14 @@ router.get("/post/:id", (req, res) => {
       }
       const post = dbPostData.get({ plain: true });
       console.log(post);
-      res.render("single-post", { post, loggedIn: req.session.loggedIn });
+      res.render("singlePost", { post, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });
 });
-router.get("/posts-comments", (req, res) => {
+router.get("/comments", (req, res) => {
   Post.findOne({
     where: {
       id: req.params.id,
@@ -104,7 +104,7 @@ router.get("/posts-comments", (req, res) => {
       }
       const post = dbPostData.get({ plain: true });
 
-      res.render("posts-comments", { post, loggedIn: req.session.loggedIn });
+      res.render("comments", { post, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);

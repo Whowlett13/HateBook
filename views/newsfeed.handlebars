@@ -1,15 +1,40 @@
-<h2>Your Posts</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<button type="submit" class="btn new-post-button"><a class="link" href="/dashboard/new"> New Post</a></button>
-<section>
-    {{#if posts.length}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HateBook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="container wrapper">
+        <header class="row header">
+            <h1 class="logo" href="/">HateBook</h1>
+            <nav>
+                <ul class="navbar">
+                    <a class="link" href="/">Home</a>
+                    <a class="link" href="/newsFeed">Newsfeed</li>
+                        {{#if loggedIn}}
+                        <a class="link" href="/" id="logout">Logout</a>
+                        {{else}}
+                        <a class="link" href="/login">Login</a>
+                        {{/if}}
+                </ul>
+            </nav>
 
 
-    {{#each posts as |post|}}
-    {{> newsfeed-post}}
-    {{/each}}
+        </header>
 
+        <main>
+            {{{ body }}}
+        </main>
 
-    {{/if}}
-</section>
-<script src="/HateBook/public/js/addPost.js"></script>
+    </div>
+</body>
+
+</html>

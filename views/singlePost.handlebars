@@ -1,5 +1,5 @@
 <section class="single-post-container">
-    {{> post-info post}}
+    {{ post-info post}}
 
     {{#if loggedIn}}
     <div class="comment-container">
@@ -14,10 +14,10 @@
     </div>
     {{/if}}
 
-    {{> comments post.comments}}
+    {{comments post.comments}}
 
 </section>
 
 {{#if loggedIn}}
-<script src="/js/comment.js"></script>
+<script src="../public/js/comment.js"></script>
 {{/if}}
