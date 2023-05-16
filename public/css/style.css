@@ -8,7 +8,10 @@
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
-
+.row {
+  border: #4267b2 solid;
+  margin: 5px;
+}
 body {
   font-family: Arial;
   margin: 0;
