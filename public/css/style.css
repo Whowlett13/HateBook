@@ -33,11 +33,18 @@ a {
 a:visited {
   color: inherit;
 }
-
+container{
+  display: flex;
+justify-content: center;
+  border: 7px;
+ 
+  background-color: #4267b2;
+  color: #4267b2;
+}
 postContainer{
   display: flex;
 justify-content: center;
-  border: 7px double var(--dark);
+  border: 7px;
   border-radius: 10px black;
   background-color: #4267b2;
   color: #4267b2;
@@ -65,7 +72,6 @@ cardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-style: groove 5px #4267b2;
 }
 .projects__row-content {
