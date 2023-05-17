@@ -25,7 +25,7 @@ Link to Heroku: https://cryptic-beach-21837.herokuapp.com/
 
 ## ScreenShot of Deployed Application:
 
-Link:
+Link:![Screenshot (183)](https://github.com/Whowlett13/HateBook/assets/116604140/65dac05e-7428-4dd2-889c-c23229fa8703)
 
 ## Built With:
 
